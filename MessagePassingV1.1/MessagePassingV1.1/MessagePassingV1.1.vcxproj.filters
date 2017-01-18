@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Test.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Aktionmanager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -53,9 +50,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="Aktionmanager.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>

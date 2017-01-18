@@ -155,7 +155,6 @@
     <ClInclude Include="MessagePassing.h" />
     <ClInclude Include="MessageQueue.h" />
     <ClInclude Include="seThread.h" />
-    <ClInclude Include="Test.h" />
     <ClInclude Include="ThreadMutex.h" />
     <ClInclude Include="ThreadMutexGuard.h" />
   </ItemGroup>
@@ -169,7 +168,6 @@
     <ClCompile Include="MessagePassing.cpp" />
     <ClCompile Include="MessageQueue.cpp" />
     <ClCompile Include="seThread.cpp" />
-    <ClCompile Include="Test.cpp" />
     <ClCompile Include="ThreadMutex.cpp" />
     <ClCompile Include="ThreadMutexGuard.cpp" />
   </ItemGroup>
