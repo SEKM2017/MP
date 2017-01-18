@@ -12,6 +12,7 @@ private:
 	AktionmanagerListe aktionManagerList;
 public:
 	Kanal();
+	Kanal(int kanalNR);
 	Kanal(MessageQueue &mq, int kanalNR);
 	~Kanal();
 	void setMessageQueue(MessageQueue mq);

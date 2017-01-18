@@ -1,0 +1,22 @@
+<Kanaele>
+<Kanal1 sloutCount="10" slotLen="3">
+</Kanal1>
+<Kanal2 sloutCount="11" slotLen="4">
+</Kanal2>
+<Kanal3 sloutCount="12" slotLen="5">
+</Kanal3>
+<Kanal4 sloutCount="13" slotLen="6">
+</Kanal4>
+<Kanal5 sloutCount="14" slotLen="7">
+</Kanal5>
+<Kanal6 sloutCount="15" slotLen="8">
+</Kanal6>
+<Kanal7 sloutCount="16" slotLen="9">
+</Kanal7>
+<Kanal8 sloutCount="17" slotLen="10">
+</Kanal8>
+<Kanal9 sloutCount="18" slotLen="11">
+</Kanal9>
+<Kanal10 sloutCount="19" slotLen="12">
+</Kanal10>
+</Kanaele>

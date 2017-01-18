@@ -1,6 +1,7 @@
 #pragma once
 #include "KanalListe.h"
 #include "Kanal.h"
+#include "Misc.h"
 
 class InitUnit
 {

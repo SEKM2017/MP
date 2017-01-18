@@ -17,8 +17,7 @@ KanalListe* InitUnit::Init()
 	//Erstellen der Kanaele und hinzufügen von Kanaelen
 	for (i = 0; i < 10; i++)
 	{
-		kanal = new Kanal();
-
+		kanal = new Kanal(i);
 		kanalListe->add(kanal);
 	}
 

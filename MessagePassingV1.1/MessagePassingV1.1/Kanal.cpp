@@ -7,6 +7,11 @@ Kanal::Kanal()
 {
 }
 
+Kanal::Kanal(int kanalNR)
+{
+	KanalNummer = kanalNR;
+}
+
 Kanal::Kanal(MessageQueue &mq, int kanalNR)
 {
 	messageQueue = mq;
