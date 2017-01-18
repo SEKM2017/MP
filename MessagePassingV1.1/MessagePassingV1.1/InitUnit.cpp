@@ -8,9 +8,21 @@ InitUnit::InitUnit()
 InitUnit::~InitUnit()
 {
 }
-bool InitUnit::Init(KanalListe liste)
+KanalListe* InitUnit::Init()
 {
-	throw "NIY";
+	int i;
+	Kanal *kanal;
+	KanalListe *kanalListe = KanalListe::Exemplar();
+
+	//Erstellen der Kanaele und hinzufügen von Kanaelen
+	for (i = 0; i < 10; i++)
+	{
+		kanal = new Kanal();
+
+		kanalListe->add(kanal);
+	}
+
+	return kanalListe;
 }
 bool InitUnit::ReInit(KanalListe liste)
 {

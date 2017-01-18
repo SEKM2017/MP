@@ -1,4 +1,5 @@
 #include "MessagePassing.h"
+#include "KanalListe.h"
 
 MessagePassing::MessagePassing()
 {
@@ -18,8 +19,14 @@ MessagePassing* MessagePassing::Exemplar()
 
 int main()
 {
+	InitUnit ui;
+	KanalListe *kanalListe;
+	kanalListe = ui.Init();
 	MessageQueue mqA;
+	
 	Kanal A(mqA,1);
+	
+
 	
 	mqA.schreiben("Test");
 	return 0;

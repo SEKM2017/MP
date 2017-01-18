@@ -1,5 +1,6 @@
 #pragma once
-#include "KanalListe.h";
+#include "KanalListe.h"
+#include "Kanal.h"
 
 class InitUnit
 {
@@ -8,7 +9,7 @@ private:
 public:
 	InitUnit();
 	~InitUnit();
-	bool Init(KanalListe liste);
+	KanalListe* Init();
 	bool ReInit(KanalListe liste);
 	Kanal erzeugeKanal();
 	bool zerstoereKanal(int kanalNummer);

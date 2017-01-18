@@ -1,9 +1,8 @@
 #include "KanalListe.h"
 
-
-
 KanalListe::KanalListe()
 {
+	
 }
 
 
@@ -11,13 +10,20 @@ KanalListe::~KanalListe()
 {
 }
 
-void KanalListe::add(Kanal Kanal)
+void KanalListe::add(Kanal *kanal)
 {
-	throw "Not implemented yet";
+	liste[listCounter] = *kanal;
+	listCounter++;
 }
+
+KanalListe* KanalListe::theExemplar = 0;
 KanalListe * KanalListe::Exemplar()
 {
-	throw"NIY";
+	if (theExemplar == 0)
+	{
+		theExemplar = new KanalListe;
+	}
+	return (theExemplar);
 }
 
 Kanal KanalListe::findKanalById(int kanalNummer)

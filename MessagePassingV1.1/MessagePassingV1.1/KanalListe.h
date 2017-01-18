@@ -3,13 +3,14 @@
 class KanalListe
 {
 private:
-	int anzahlMaxKanaele;
-	//Kanal liste[];
+	int anzahlMaxKanaele=10;
+	int listCounter=0;
+	Kanal liste[10];
 	static KanalListe* theExemplar;
 public:
 	KanalListe();
 	~KanalListe();
-	void add(Kanal Kanal);
+	void add(Kanal *kanal);
 	static KanalListe* Exemplar();
 	Kanal findKanalById(int kanalNummer);
 };
