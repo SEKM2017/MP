@@ -21,6 +21,7 @@ Kanal::~Kanal()
 void Kanal::setMessageQueue(MessageQueue mq)
 {
 	messageQueue = mq;
+	//
 }
 
 MessageQueue Kanal::getMessageQueue()
