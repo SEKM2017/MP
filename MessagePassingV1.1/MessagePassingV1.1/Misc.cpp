@@ -14,7 +14,9 @@ Misc::~Misc()
 static string ReadFromFile()
 {
 	fstream f;
-	f.open("config/config_json.txt", ios::in);
+	f.open("config/config_xml.txt", ios::in);
+	//Test
+	char a = f.get();
 	f.close();
 
 	return "txt";

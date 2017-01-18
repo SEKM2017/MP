@@ -1,5 +1,6 @@
 #pragma once
 #include "InitUnit.h"
+#include "KanalListe.h"
 
 class MessagePassing
 {
