@@ -33,7 +33,7 @@ bool MessageQueue::schreiben(string gesendeteNchricht)
 	for (int i = 0; i < DefinedslotCount; i++) {
 		if (nachrichten[i] == "") {
 			if (gesendeteNchricht.length() >= DefinedslotLen) {
-				int differenz = gesendeteNchricht.length - DefinedslotLen;
+//				int differenz = gesendeteNchricht.length - DefinedslotLen;
 				
 			}
 			//laenge untersuchen evt abschneiden
