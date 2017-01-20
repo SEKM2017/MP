@@ -10,8 +10,13 @@ KanalListe::~KanalListe()
 {
 }
 
-void KanalListe::add(Kanal *kanal)
+void KanalListe::add(Kanal *kanal,int slotLen, int slotCount)
 {
+	mq = new MessageQueue();
+
+	mq->setSlotCount(slotCount);
+	mq->setSlotLen(slotLen);
+	kanal->setMessageQueue(mq);
 	liste[listCounter] = *kanal;
 	listCounter++;
 }
