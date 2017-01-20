@@ -10,6 +10,12 @@ Kanal::Kanal()
 Kanal::Kanal(int kanalNR)
 {
 	kanalNummer = kanalNR;
+	setMessageQueue(DefinedslotLen, DefinedslotCount);
+}
+Kanal::Kanal(int kanalNR, int slotLen, int slotCount)
+{
+	kanalNummer = kanalNR;
+	setMessageQueue(slotLen, slotCount);
 }
 
 Kanal::Kanal(MessageQueue *mq, int kanalNR)
@@ -45,7 +51,7 @@ MessageQueue* Kanal::getMessageQueue()
 void Kanal::addAktionManagaer(Aktionmanager am)
 {
 }
-int Kanal::getKanalId()
+int Kanal::getKanalNummer()
 {
 	return kanalNummer;
 }

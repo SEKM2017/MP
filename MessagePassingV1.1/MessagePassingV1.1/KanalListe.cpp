@@ -14,7 +14,6 @@ bool KanalListe::add(Kanal *kanal,int slotLen, int slotCount)
 	bool result = false;
 	if (listCounter < anzahlMaxKanaele)
 	{
-		kanal->setMessageQueue(slotLen, slotCount);
 		liste[listCounter] = *kanal;
 		listCounter++;
 		result = true;
@@ -56,15 +55,21 @@ Kanal* KanalListe::findKanalById(int kanalNummer)
 	int i;
 	Kanal *gesuchterKanal;
 
-	gesuchterKanal = new Kanal();
-
-	for (i = 0; i < anzahlMaxKanaele; i++)
+	/*for (i = 0; i < anzahlMaxKanaele; i++)
 	{	
 		*gesuchterKanal = liste[i];
 		if (gesuchterKanal->getKanalId() == kanalNummer)
 		{
 			break;
 		}
+	}*/
+	if (liste[kanalNummer].getKanalNummer() != -1) {
+		gesuchterKanal = &liste[kanalNummer];
+	}
+	else 
+	{
+		//gesuchter Kanal existiert nicht
+		gesuchterKanal = new Kanal();
 	}
 
 	return gesuchterKanal;

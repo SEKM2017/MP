@@ -56,7 +56,7 @@ bool MessageQueue::schreiben(string gesendeteNchricht)
 //aktuell
 bool MessageQueue::lesen(int verlangteLaenge, string& kopierString)
 {
-	empfaengerAntwort bAntwort;
+	EMPFAENGERANTWORT bAntwort;
 	string returnString = "";
 		if (nachrichten[0] != "") {
 			int kopierLaenge = static_cast<int>(nachrichten[0].length());

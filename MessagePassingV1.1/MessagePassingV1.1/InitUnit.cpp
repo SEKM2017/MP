@@ -37,7 +37,7 @@ int InitUnit::erzeugeKanal(int slotLen, int slotCount)
 
 	kanalListe->add(kanal, slotLen, slotCount);
 
-	return kanal->getKanalId();
+	return kanal->getKanalNummer();
 	
 }
 bool InitUnit::zerstoereKanal(int kanalNummer)

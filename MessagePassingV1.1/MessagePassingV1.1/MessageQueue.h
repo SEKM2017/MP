@@ -3,7 +3,7 @@
 #include <list>
 #include "ThreadMutexGuard.h"
 #define DefinedslotCount  10
-#define DefinedslotLen 1
+#define DefinedslotLen 5
 using namespace std;
 
 class MessageQueue
@@ -16,7 +16,7 @@ private:
 		int geschnittenAnzahl = 0;
 		string antwortAnSender = "";
 	};
-	struct empfaengerAntwort {
+	struct EMPFAENGERANTWORT {
 		bool erfolg = false;
 		int geschnittenAnzahl = 0;
 		string antwortAnEmpfaenger = "";
