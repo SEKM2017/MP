@@ -9,15 +9,36 @@ KanalListe::~KanalListe()
 {
 }
 
-void KanalListe::add(Kanal *kanal,int slotLen, int slotCount)
+bool KanalListe::add(Kanal *kanal,int slotLen, int slotCount)
 {
-	mq = new MessageQueue();
+	bool result = false;
+	if (listCounter < anzahlMaxKanaele)
+	{
+		kanal->setMessageQueue(slotLen, slotCount);
+		liste[listCounter] = *kanal;
+		listCounter++;
+		result = true;
+	}
 
-	mq->setSlotCount(slotCount);
-	mq->setSlotLen(slotLen);
-	kanal->setMessageQueue(mq);
-	liste[listCounter] = *kanal;
-	listCounter++;
+	return result;
+}
+
+bool KanalListe::destroy(int kanalNummer)
+{
+	bool result = false;
+	int i;
+	Kanal *kanal;
+
+	kanal = theExemplar->findKanalById(kanalNummer);
+
+	if (kanal != NULL)
+	{
+		kanal->~Kanal();
+		result = true;
+	}
+
+	return result;
+
 }
 
 KanalListe* KanalListe::theExemplar = 0;

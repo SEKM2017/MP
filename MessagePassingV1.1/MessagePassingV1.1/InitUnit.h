@@ -12,7 +12,7 @@ public:
 	~InitUnit();
 	KanalListe* Init();
 	bool ReInit(KanalListe liste);
-	Kanal erzeugeKanal();
+	int erzeugeKanal(int slotLen, int slotCount);
 	bool zerstoereKanal(int kanalNummer);
 };
 

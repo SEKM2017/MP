@@ -22,17 +22,23 @@ int main()
 	KanalListe *kanalListe;
 	Kanal *kanal;
 	kanalListe = ui.Init();
-	MessageQueue *mqA, *mqB;
+	MessageQueue *mqA, *mqB, *mqC;
 	
 	//Kanal A(mqA,1);
 	
 	kanal = kanalListe->findKanalById(1);
 	mqA = kanal->getMessageQueue();
-	kanal = kanalListe->findKanalById(1);
-	mqB = kanal->getMessageQueue();
 	mqA->schreiben("Test");
+	kanal = kanalListe->findKanalById(0);
+	mqB = kanal->getMessageQueue();
+	mqB->schreiben("Test123");
+	kanal = kanalListe->findKanalById(5);
+	mqC = kanal->getMessageQueue();
+	mqC->schreiben("TestDel");
+	kanalListe->destroy(5);
+	
+	mqC = kanal->getMessageQueue();
 
-	//mqA.schreiben("Test");
 	return 0;
 }
 
