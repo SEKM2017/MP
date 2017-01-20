@@ -21,7 +21,7 @@ private:
 		int geschnittenAnzahl = 0;
 		string antwortAnEmpfaenger = "";
 	};
-	string nachrichten[2];
+	string nachrichten[DefinedslotCount];
 	ThreadMutex theLock;
 public:
 	MessageQueue();
@@ -31,6 +31,6 @@ public:
 	int getSlotLen();
 	void setSlotLen(int len);
 	bool schreiben(string nachricht);
-	string lesen();
+	bool lesen(int verlangeLaenge, string& kopierString);
 };
 
