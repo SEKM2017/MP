@@ -1,7 +1,9 @@
 #pragma once
 #include <string>
+#include <list>
 #include "ThreadMutexGuard.h"
 #define DefinedslotCount  10
+#define DefinedslotLen 50
 using namespace std;
 
 class MessageQueue
@@ -9,7 +11,17 @@ class MessageQueue
 private: 
 	int slotCount;
 	int slotLen;
-	string nachrichten[2][10];
+	struct SENDERANTWORT {
+		bool erfolg = false;
+		int geschnittenAnzahl = 0;
+		string antwortAnSender = "";
+	};
+	struct empfaengerAntwort {
+		bool erfolg = false;
+		int geschnittenAnzahl = 0;
+		string antwortAnEmpfaenger = "";
+	};
+	string nachrichten[2];
 	ThreadMutex theLock;
 public:
 	MessageQueue();
