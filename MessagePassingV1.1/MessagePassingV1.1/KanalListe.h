@@ -14,6 +14,6 @@ public:
 	~KanalListe();
 	void add(Kanal *kanal, int slotLen, int slotCount);
 	static KanalListe* Exemplar();
-	Kanal findKanalById(int kanalNummer);
+	Kanal* findKanalById(int kanalNummer);
 };
 

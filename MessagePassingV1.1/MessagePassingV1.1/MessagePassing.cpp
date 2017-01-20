@@ -20,18 +20,19 @@ int main()
 {
 	InitUnit ui;
 	KanalListe *kanalListe;
-
+	Kanal *kanal;
 	kanalListe = ui.Init();
-	MessageQueue mqA;
+	MessageQueue *mqA, *mqB;
 	
-	Kanal A(mqA,1);
+	//Kanal A(mqA,1);
 	
+	kanal = kanalListe->findKanalById(1);
+	mqA = kanal->getMessageQueue();
+	kanal = kanalListe->findKanalById(1);
+	mqB = kanal->getMessageQueue();
+	mqA->schreiben("Test");
 
-
-	
-	mqA.schreiben("Test");
-	string lesenTest = "leer";
-	mqA.lesen(5, lesenTest);
+	//mqA.schreiben("Test");
 	return 0;
 }
 
