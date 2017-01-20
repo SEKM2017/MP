@@ -6,7 +6,7 @@ class Kanal
 {
 private:
 	MessageQueue messageQueue;
-	int KanalNummer;
+	int kanalNummer;
 	
 	AktionmanagerListe aktionManagerList;
 public:
@@ -15,8 +15,8 @@ public:
 	Kanal(MessageQueue &mq, int kanalNR);
 	~Kanal();
 	void setMessageQueue(MessageQueue *mq);
-	MessageQueue getMessageQueue();
+	MessageQueue* getMessageQueue();
 	void addAktionManagaer(Aktionmanager am);
-	
+	int getKanalId();
 };
 

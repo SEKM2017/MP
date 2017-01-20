@@ -9,13 +9,13 @@ Kanal::Kanal()
 
 Kanal::Kanal(int kanalNR)
 {
-	KanalNummer = kanalNR;
+	kanalNummer = kanalNR;
 }
 
 Kanal::Kanal(MessageQueue &mq, int kanalNR)
 {
 	messageQueue = mq;
-	KanalNummer = kanalNR;
+	kanalNummer = kanalNR;
 }
 
 
@@ -29,13 +29,15 @@ void Kanal::setMessageQueue(MessageQueue *mq)
 	//
 }
 
-MessageQueue Kanal::getMessageQueue()
+MessageQueue* Kanal::getMessageQueue()
 {
-	//return messageQueue;
-	throw"NIY";
+	return &messageQueue;
 }
 
 void Kanal::addAktionManagaer(Aktionmanager am)
 {
 }
-
+int Kanal::getKanalId()
+{
+	return kanalNummer;
+}

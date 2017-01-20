@@ -2,7 +2,6 @@
 
 KanalListe::KanalListe()
 {
-	
 }
 
 
@@ -31,7 +30,21 @@ KanalListe * KanalListe::Exemplar()
 	return (theExemplar);
 }
 
-Kanal KanalListe::findKanalById(int kanalNummer)
+Kanal* KanalListe::findKanalById(int kanalNummer)
 {
-	throw "Not implemented yet";
+	int i;
+	Kanal *gesuchterKanal;
+
+	gesuchterKanal = new Kanal();
+
+	for (i = 0; i < anzahlMaxKanaele; i++)
+	{	
+		*gesuchterKanal = liste[i];
+		if (gesuchterKanal->getKanalId() == kanalNummer)
+		{
+			break;
+		}
+	}
+
+	return gesuchterKanal;
 }
