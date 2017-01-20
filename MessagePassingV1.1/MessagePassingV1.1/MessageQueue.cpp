@@ -53,7 +53,7 @@ bool MessageQueue::schreiben(string gesendeteNchricht)
 	sAntwort.antwortAnSender = "Unerwarteter Fehler";
 	return false;
 }
-
+//aktuell
 bool MessageQueue::lesen(int verlangteLaenge, string& kopierString)
 {
 	empfaengerAntwort bAntwort;

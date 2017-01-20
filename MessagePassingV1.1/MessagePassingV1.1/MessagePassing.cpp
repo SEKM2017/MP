@@ -33,6 +33,11 @@ int main()
 	mqA->schreiben("Test");
 
 	//mqA.schreiben("Test");
+
+	/*mqA.schreiben("Test");
+	string lesenTest = "leer";
+	mqA.lesen(5, lesenTest);*/
+	return 0;
 	return 0;
 }
 
