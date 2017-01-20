@@ -12,7 +12,7 @@ Kanal::Kanal(int kanalNR)
 	kanalNummer = kanalNR;
 }
 
-Kanal::Kanal(MessageQueue &mq, int kanalNR)
+Kanal::Kanal(MessageQueue *mq, int kanalNR)
 {
 	messageQueue = mq;
 	kanalNummer = kanalNR;
@@ -21,17 +21,25 @@ Kanal::Kanal(MessageQueue &mq, int kanalNR)
 
 Kanal::~Kanal()
 {
+	//Hier muss noch der Speicher freigegeben werden
 }
 
-void Kanal::setMessageQueue(MessageQueue *mq)
+bool Kanal::setMessageQueue(int slotLen, int slotCount)
 {
-	messageQueue = *mq;
-	//
+	bool result = false;
+
+	messageQueue = new MessageQueue();
+	messageQueue->setSlotLen(slotLen);
+	messageQueue->setSlotCount(slotCount);
+	
+	result = true;
+
+	return result;
 }
 
 MessageQueue* Kanal::getMessageQueue()
 {
-	return &messageQueue;
+	return messageQueue;
 }
 
 void Kanal::addAktionManagaer(Aktionmanager am)

@@ -29,12 +29,23 @@ bool InitUnit::ReInit(KanalListe liste)
 {
 	throw "NIY";
 }
-Kanal InitUnit::erzeugeKanal()
+int InitUnit::erzeugeKanal(int slotLen, int slotCount)
 {
-	throw "NIY";
+	KanalListe *kanalListe = KanalListe::Exemplar();
+	
+	Kanal *kanal = new Kanal();
+
+	kanalListe->add(kanal, slotLen, slotCount);
+
+	return kanal->getKanalId();
+	
 }
 bool InitUnit::zerstoereKanal(int kanalNummer)
 {
-	throw "NIY";
-}
+	bool result = false;
+	KanalListe *kanalListe = KanalListe::Exemplar();
 
+	result = kanalListe->destroy(kanalNummer);
+	
+	return result;
+}

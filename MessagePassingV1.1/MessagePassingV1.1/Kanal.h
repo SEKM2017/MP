@@ -5,16 +5,16 @@
 class Kanal
 {
 private:
-	MessageQueue messageQueue;
+	MessageQueue *messageQueue;
 	int kanalNummer;
 	
 	AktionmanagerListe aktionManagerList;
 public:
 	Kanal();
 	Kanal(int kanalNR);
-	Kanal(MessageQueue &mq, int kanalNR);
+	Kanal(MessageQueue *mq, int kanalNR);
 	~Kanal();
-	void setMessageQueue(MessageQueue *mq);
+	bool setMessageQueue(int slotLen, int slotCount);
 	MessageQueue* getMessageQueue();
 	void addAktionManagaer(Aktionmanager am);
 	int getKanalId();

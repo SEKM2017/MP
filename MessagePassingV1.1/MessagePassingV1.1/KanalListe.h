@@ -8,11 +8,11 @@ private:
 	int listCounter=0;
 	Kanal liste[10];
 	static KanalListe* theExemplar;
-	MessageQueue *mq;
 public:
 	KanalListe();
 	~KanalListe();
-	void add(Kanal *kanal, int slotLen, int slotCount);
+	bool add(Kanal *kanal, int slotLen, int slotCount);
+	bool destroy(int kanalNummer);
 	static KanalListe* Exemplar();
 	Kanal* findKanalById(int kanalNummer);
 };
