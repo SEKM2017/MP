@@ -3,7 +3,7 @@
 #include <list>
 #include "ThreadMutexGuard.h"
 #define DefinedslotCount  10
-#define DefinedslotLen 50
+#define DefinedslotLen 1
 using namespace std;
 
 class MessageQueue
