@@ -14,7 +14,7 @@ public:
 	Kanal(int kanalNR);
 	Kanal(MessageQueue &mq, int kanalNR);
 	~Kanal();
-	void setMessageQueue(MessageQueue mq);
+	void setMessageQueue(MessageQueue *mq);
 	MessageQueue getMessageQueue();
 	void addAktionManagaer(Aktionmanager am);
 	

@@ -14,11 +14,13 @@ KanalListe* InitUnit::Init()
 	Kanal *kanal;
 	KanalListe *kanalListe = KanalListe::Exemplar();
 
+	Misc::ReadFromFile();
+
 	//Erstellen der Kanaele und hinzufügen von Kanaelen
 	for (i = 0; i < 10; i++)
 	{
 		kanal = new Kanal(i);
-		kanalListe->add(kanal);
+		kanalListe->add(kanal,10,10);
 	}
 
 	return kanalListe;

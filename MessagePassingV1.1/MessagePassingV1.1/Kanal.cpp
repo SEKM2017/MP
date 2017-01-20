@@ -23,9 +23,9 @@ Kanal::~Kanal()
 {
 }
 
-void Kanal::setMessageQueue(MessageQueue mq)
+void Kanal::setMessageQueue(MessageQueue *mq)
 {
-	messageQueue = mq;
+	messageQueue = *mq;
 	//
 }
 
