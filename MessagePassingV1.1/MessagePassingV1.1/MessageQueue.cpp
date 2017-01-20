@@ -1,5 +1,6 @@
 #include "MessageQueue.h"
 #include <list>
+
 using namespace std;
 MessageQueue::MessageQueue()
 {
@@ -32,12 +33,11 @@ bool MessageQueue::schreiben(string gesendeteNchricht)
 	//FIFO - Reinschreiben an der ersten freien Stelle
 	for (int i = 0; i < DefinedslotCount; i++) {
 		if (nachrichten[i] == "") {
-			if (gesendeteNchricht.length() >= DefinedslotLen) {
-//				int differenz = gesendeteNchricht.length - DefinedslotLen;
-				
+			int differenz = static_cast<int>(gesendeteNchricht.length());
+			if (differenz >= DefinedslotLen) {
+				differenz = DefinedslotLen;
 			}
-			//laenge untersuchen evt abschneiden
-			nachrichten[i] = gesendeteNchricht;
+				nachrichten[i].assign(gesendeteNchricht, 0,differenz);
 			return true;
 		}
 		else if (i == DefinedslotCount) {
@@ -45,7 +45,7 @@ bool MessageQueue::schreiben(string gesendeteNchricht)
 		}
 	}
 
-	return true;
+	//return false;
 }
 string MessageQueue::lesen()
 {
