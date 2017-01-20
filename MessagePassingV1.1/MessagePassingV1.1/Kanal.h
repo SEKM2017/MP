@@ -7,8 +7,7 @@ class Kanal
 private:
 	MessageQueue messageQueue;
 	int KanalNummer;
-	struct senderAntwort;
-	struct empfaengerAntwort;
+	
 	AktionmanagerListe aktionManagerList;
 public:
 	Kanal();
