@@ -31,13 +31,10 @@ int main()
 	kanal = kanalListe->findKanalById(1);
 	mqB = kanal->getMessageQueue();
 	mqA->schreiben("Test");
+	string leseTest = "leer";
+	mqA->lesen(10, leseTest);
 
-	//mqA.schreiben("Test");
 
-	/*mqA.schreiben("Test");
-	string lesenTest = "leer";
-	mqA.lesen(5, lesenTest);*/
-	return 0;
 	return 0;
 }
 
