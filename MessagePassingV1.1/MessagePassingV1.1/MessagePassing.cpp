@@ -18,10 +18,10 @@ MessagePassing* MessagePassing::Exemplar()
 
 int main()
 {
-	InitUnit ui;
+	InitUnit iu;
 	KanalListe *kanalListe;
 	//Kanal *kanal;
-	kanalListe = ui.Init();
+	kanalListe = iu.Init();
 	MessageQueue *mqA , *mqB;
 	
 	//Kanal A(mqA,1);
@@ -62,6 +62,7 @@ int main()
 	}
 
 	system("PAUSE");
+	Misc::WriteToLogfile("Logfile", "Programm beendet");
 	return 0;
 }
 

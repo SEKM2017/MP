@@ -9,7 +9,7 @@ KanalListe::~KanalListe()
 {
 }
 
-bool KanalListe::add(Kanal *kanal,int slotLen, int slotCount)
+bool KanalListe::add(Kanal *kanal)
 {
 	bool result = false;
 	if (listCounter < anzahlMaxKanaele)

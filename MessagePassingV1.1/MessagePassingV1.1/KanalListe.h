@@ -11,7 +11,7 @@ private:
 public:
 	KanalListe();
 	~KanalListe();
-	bool add(Kanal *kanal, int slotLen, int slotCount);
+	bool add(Kanal *kanal);
 	bool destroy(int kanalNummer);
 	static KanalListe* Exemplar();
 	Kanal* findKanalById(int kanalNummer);
