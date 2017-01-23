@@ -39,7 +39,7 @@ int main()
 
 	Kanal *kA = kanalListe->findKanalById(0);
 	MessageQueue *mqA = kA->getMessageQueue();
-	Kanal *kB = kanalListe->findKanalById(8);
+	Kanal *kB = kanalListe->findKanalById(6);
 	MessageQueue *mqB = kB->getMessageQueue();
 
 	empfA.connectedTo = connectUnit->connect(0);
@@ -49,6 +49,7 @@ int main()
 
 	string tempText = empfA.empfaengeNachricht(5);
 	string tempText2 = empfB.empfaengeNachricht(5);
+	int tmp = kB->getKanalNummer();
 	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << tempText <<"\" \n";
 	cout << "In Kanal Nr." << kB->getKanalNummer() << " steht: \"" << tempText2 << "\" \n\n";
 
@@ -56,13 +57,23 @@ int main()
 	cout << "Geben Sie eine Nachricht ein, die im Kanal " << kA->getKanalNummer() << " gespeichert werden soll." << endl;
 	cin >> tempText;
 	senderA.sendeNachricht(tempText);
-	int tmp;
+	tmp = senderA.sAntwort.geschnittenAnzahl;
+	if (tmp > 0) {
+		cout << "Die verfuegbare Laenge (slotLen) ist kuerzer als die eingegebene Nachtichlaenge." <<
+			"Daher wurden " << tmp << " Zeichen abgeschnitten" << endl;
+	}
+		
 	cout <<"Geben Sie die gewuenschte Laenge fuer dem Empfang an."<< endl;
 	cin >> tmp;
 	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << empfA.empfaengeNachricht(tmp) << "\" \n";
+	tmp = empfA.eAntwort.geschnittenAnzahl;
+	if (tmp > 0) {
+		cout << "Die Gespeicherte Nachricht war Laenger als die gewuenschte Laenge. Daher wurden " 
+			<<tmp<<" Zeichen gekuerzt"<< endl;
+	}
+
 	
 	
-	//kanalListe->destroy(1);
 
 	system("PAUSE");
 	Misc::WriteToLogfile("Logfile", "Programm beendet");

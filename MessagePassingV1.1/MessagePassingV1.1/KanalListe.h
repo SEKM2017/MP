@@ -14,7 +14,7 @@ protected:
 	KanalListe& operator= (const KanalListe&);
 	~KanalListe();
 public:
-	
+	int getAnzahlMaxKanaele();
 	bool add(Kanal *kanal);
 	bool destroy(int kanalNummer);
 	static KanalListe* Exemplar();

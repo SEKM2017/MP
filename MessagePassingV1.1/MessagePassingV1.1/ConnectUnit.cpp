@@ -79,12 +79,18 @@ Sender::~Sender()
 
 void Sender::sendeNachricht(string nachricht)
 {
-	ThreadMutexGuard theGuard(theLock);
-	KanalListe *kListe;
-	Kanal *gesuchterKanal;
-	kListe = KanalListe::Exemplar();
-	gesuchterKanal = kListe->findKanalById(connectedTo);
-	gesuchterKanal->getMessageQueue()->schreiben(nachricht);
+	if (connectedTo >= 0) {
+		ThreadMutexGuard theGuard(theLock);
+		KanalListe *kListe;
+		Kanal *gesuchterKanal;
+		kListe = KanalListe::Exemplar();
+		gesuchterKanal = kListe->findKanalById(connectedTo);
+		MessageQueue *mq = gesuchterKanal->getMessageQueue();
+		sAntwort = mq->schreiben(nachricht);
+	}
+	else {
+		sAntwort.antwortAnSender = "Verbindungsfehler mit dem Kanal";
+	}
 
 }
 
@@ -98,17 +104,19 @@ Empfaenger::~Empfaenger()
 
 string Empfaenger::empfaengeNachricht(int len)
 {
-	if (connectedTo > 0) {
+	if (connectedTo >= 0) {
 		ThreadMutexGuard theGuard(theLock);
 		string returnString = "";
 		KanalListe *kListe;
 		Kanal *gesuchterKanal;
 		kListe = KanalListe::Exemplar();
 		gesuchterKanal = kListe->findKanalById(connectedTo);
-		gesuchterKanal->getMessageQueue()->lesen(len, returnString);
+		MessageQueue *mq = gesuchterKanal->getMessageQueue();
+		eAntwort = mq->lesen(len, returnString);
 		return returnString;
 	}
 	else {
-		throw"Exepction: Keine Verbindung vorhanden";
+		eAntwort.antwortAnEmpfaenger = "Verbindungsfehler mit dem Kanal";
+		return "_ERROR";
 	}
 }

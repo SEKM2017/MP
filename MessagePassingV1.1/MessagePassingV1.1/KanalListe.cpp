@@ -18,6 +18,11 @@ KanalListe::~KanalListe()
 {
 }
 
+int KanalListe::getAnzahlMaxKanaele()
+{
+	return anzahlMaxKanaele;
+}
+
 bool KanalListe::add(Kanal *kanal)
 {
 	bool result = false;

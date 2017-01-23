@@ -2,6 +2,9 @@
 #include "KanalListe.h"
 #include "Kanal.h"
 #include "Misc.h"
+#include <sstream>  //for std::istringstream
+#include <iterator> //for std::istream_iterator
+#include <vector>   //for std::vector
 #include <iostream>
 #include <fstream>
 
@@ -10,8 +13,9 @@ class InitUnit
 private:
 	bool istInitialisiert;
 	bool dateiErfolgreichgelesen = false;
-	int zuErzeugendeKanaele[50][20] = {};
-
+	int zuErzeugendeSlotCounts[20] = {};
+	int zuErzeugendeSlotLens[50] = {};
+	int anzahlKanaele;
 public:
 	InitUnit();
 	~InitUnit();

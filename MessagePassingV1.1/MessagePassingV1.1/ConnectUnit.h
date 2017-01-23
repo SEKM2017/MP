@@ -23,16 +23,10 @@ public:
 class Sender : public ConnectUnit
 {
 private:
-	struct SENDERANTWORT {
-		bool erfolg = false;
-		int geschnittenAnzahl = 0;
-		string antwortAnSender = "";
-	};
 	
 public:
-	
-	//MessageQueue* mq;
-	int connectedTo = 0;
+	SENDERANTWORT sAntwort;
+	int connectedTo = -1;
 	Sender();
 	~Sender();
 	//void sendeNachricht(string nachricht, MessageQueue* mqx);
@@ -42,13 +36,10 @@ public:
 class Empfaenger : public ConnectUnit
 {
 private:
-	struct EMPFAENGERANTWORT {
-		bool erfolg = false;
-		int geschnittenAnzahl = 0;
-		string antwortAnEmpfaenger = "";
-	};
+	
 public:
-	int connectedTo = 0;
+	EMPFAENGERANTWORT eAntwort;
+	int connectedTo = -1;
 	bool connectionAvailable = false;
 	Empfaenger();
 	~Empfaenger();

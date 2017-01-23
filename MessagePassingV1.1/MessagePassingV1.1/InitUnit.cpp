@@ -26,7 +26,12 @@ KanalListe* InitUnit::Init()
 		kanalListe->add(kanal,10,10);
 	}
 	*/
-	kanal = new Kanal(1,10,10);
+	for (int i = 0; i <anzahlKanaele || i< (kanalListe->getAnzahlMaxKanaele() ); i++) {
+		kanal = new Kanal(i, zuErzeugendeSlotLens[i], zuErzeugendeSlotCounts[i]);
+		kanalListe->add(kanal);
+		Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	}
+	/*kanal = new Kanal(1,10,10);
 	kanalListe->add(kanal);
 	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(2, 20, 12);
@@ -55,7 +60,7 @@ KanalListe* InitUnit::Init()
 	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(10, 40, 10);
 	kanalListe->add(kanal);
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");*/
 	Misc::WriteToLogfile("Logfile", "Kanaliste mit Kanaelen erfolgreich erstellt");
 	
 	return kanalListe;
@@ -66,20 +71,36 @@ void InitUnit::dateiEinlesen()
 	string line;
 	int anzahlLines = 0;
 	initFile.open("init.txt");
-	int a =0, b=0;
+	vector<string> stringVector;
 	if (initFile.is_open()) {
+		/*while (!initFile.eof())
+		{
+			getline(initFile, line);
+			anzahlLines++;
+		}*/
 		while (!initFile.eof())
 		{
-			getline(initFile, line,','); 
-			//cout << line << "\n";
-			zuErzeugendeKanaele[0][a] = stoi(line);
-			a++;
-			/*anzahlLines++;*/
+			istringstream iss(line);
+			for (string line; initFile >> line; )
+				stringVector.push_back(line);
 		}
+		dateiErfolgreichgelesen = true;
 	}
 	initFile.close();
-	size_t found = 0;
-	found = line.find(",");
+	anzahlKanaele = stringVector.size() / 2;
+	int a = 0;
+	for (int i = 0; i<stringVector.size(); i++) {
+		if (i % 2 == 0) {
+			zuErzeugendeSlotCounts[a] = stoi(stringVector[i]);
+			
+		}
+		else {
+			zuErzeugendeSlotLens[a] = stoi(stringVector[i]);
+			a++;
+		}
+
+	}
+	
 	
 }
 //bool InitUnit::ReInit(KanalListe liste)
