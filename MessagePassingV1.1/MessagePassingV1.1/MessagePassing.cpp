@@ -4,62 +4,62 @@ MessagePassing::MessagePassing()
 {
 }
 
+MessagePassing::MessagePassing(const MessagePassing &)
+{
+}
+
 
 MessagePassing::~MessagePassing()
 {
 
 }
-
+MessagePassing* MessagePassing::theExemplar = 0;
 MessagePassing* MessagePassing::Exemplar()
 {
-	throw "Not implemented yet";
+	if (theExemplar == 0) {
+		theExemplar = new MessagePassing;
+	}
+	return (theExemplar);
 }
 
 
 int main()
 {
-	InitUnit iu;
+	InitUnit initUnit;
+	ConnectUnit *connectUnit;
+	connectUnit	= ConnectUnit::Exemplar();
 	KanalListe *kanalListe;
-	//Kanal *kanal;
-	kanalListe = iu.Init();
-	MessageQueue *mqA , *mqB;
+	Sender senderA, senderB;
+	Empfaenger empfA, empfB;
+
+	kanalListe = initUnit.Init();
+	cout <<"|Message Passing Komponente - vorfuehrung|"<< endl;
+	cout << " -----------------------------------------" << "\n\n";
 	
-	//Kanal A(mqA,1);
-	
-	/*kanal = kanalListe->findKanalById(1);
-	mqA = kanal->getMessageQueue();
-	kanal = kanalListe->findKanalById(1);
-	mqB = kanal->getMessageQueue();
-	mqA->schreiben("Test");
-	string leseTest = "leer";
-	mqA->lesen(10, leseTest);*/
-	ConnectUnit connectionUnit;
-	Kanal kanalA(1);
-	mqA = kanalA.getMessageQueue();
-	mqA->schreiben("Test");
-	string leseA = "leer";
-	mqA->lesen(10, leseA); 
 
+	Kanal *kA = kanalListe->findKanalById(0);
+	MessageQueue *mqA = kA->getMessageQueue();
+	Kanal *kB = kanalListe->findKanalById(8);
+	MessageQueue *mqB = kB->getMessageQueue();
 
-	string leseB = "ffff";
-	Kanal kanalB(2);
-	mqB = kanalB.getMessageQueue();
-	Sender senderA;
-	Empfaenger emA;
-	Kanal test;
-	string emtest = "--";
-	senderA.connectedTo = connectionUnit.connect(1, &test);
-	emA.connectedTo = connectionUnit.connect(1, &test);
-	if (senderA.connectedTo > 0) {
-		string tmp = "";
-		cout << "gib Nachricht ein" << endl;
-		cin >> tmp;
-		senderA.sendeNachricht(tmp);
-		cout << "Jetzt gibt der Empfaenger die Nachricht aus" << endl;
-		emtest = emA.empfaengeNachricht();
-		cout << emtest << endl;
+	empfA.connectedTo = connectUnit->connect(0);
+	empfB.connectedTo = connectUnit->connect(6);
+	senderA.connectedTo = connectUnit->connect(0);
+	senderB.connectedTo = connectUnit->connect(6);
 
-	}
+	string tempText = empfA.empfaengeNachricht();
+	string tempText2 = empfB.empfaengeNachricht();
+	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << tempText <<"\" \n";
+	cout << "In Kanal Nr." << kB->getKanalNummer() << " steht: \"" << tempText2 << "\" \n\n";
+
+	cout << "Sendevorgang und Empfangvorgang: " << endl;
+	cout << "Geben Sie eine Nachricht ein, die im Kanal " << kA->getKanalNummer() << "gespeichert werden soll." << endl;
+	cin >> tempText;
+	senderA.sendeNachricht(tempText);
+
+	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << empfA.empfaengeNachricht() << "\" \n";
+	kanalListe->destroy(1);
+	cout << "In Kanal Nr." << kA->getKanalNummer() << endl;
 
 	system("PAUSE");
 	Misc::WriteToLogfile("Logfile", "Programm beendet");

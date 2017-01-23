@@ -4,6 +4,15 @@ KanalListe::KanalListe()
 {
 }
 
+KanalListe::KanalListe(const KanalListe &)
+{
+}
+
+//KanalListe & KanalListe::operator=(const KanalListe &)
+//{
+//	// TODO: insert return statement here
+//}
+
 
 KanalListe::~KanalListe()
 {
@@ -54,15 +63,6 @@ Kanal* KanalListe::findKanalById(int kanalNummer)
 {
 	int i;
 	Kanal *gesuchterKanal;
-
-	/*for (i = 0; i < anzahlMaxKanaele; i++)
-	{	
-		*gesuchterKanal = liste[i];
-		if (gesuchterKanal->getKanalId() == kanalNummer)
-		{
-			break;
-		}
-	}*/
 	if (liste[kanalNummer].getKanalNummer() != -1) {
 		gesuchterKanal = &liste[kanalNummer];
 	}

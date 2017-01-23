@@ -14,6 +14,7 @@ Kanal::Kanal(int kanalNR)
 }
 Kanal::Kanal(int kanalNR, int slotLen, int slotCount)
 {
+	//MessageQueue *messageQueue = new MessageQueue{};
 	kanalNummer = kanalNR;
 	setMessageQueue(slotLen, slotCount);
 }

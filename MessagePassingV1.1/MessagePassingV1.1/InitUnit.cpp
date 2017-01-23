@@ -59,10 +59,10 @@ KanalListe* InitUnit::Init()
 	
 	return kanalListe;
 }
-bool InitUnit::ReInit(KanalListe liste)
-{
-	throw "NIY";
-}
+//bool InitUnit::ReInit(KanalListe liste)
+//{
+//	throw "NIY";
+//}
 int InitUnit::erzeugeKanal(int slotLen, int slotCount)
 {
 	KanalListe *kanalListe = KanalListe::Exemplar();

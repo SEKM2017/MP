@@ -8,9 +8,13 @@ private:
 	int listCounter=0;
 	Kanal liste[10];
 	static KanalListe* theExemplar;
-public:
+protected:
 	KanalListe();
+	KanalListe(const KanalListe&);
+	KanalListe& operator= (const KanalListe&);
 	~KanalListe();
+public:
+	
 	bool add(Kanal *kanal);
 	bool destroy(int kanalNummer);
 	static KanalListe* Exemplar();

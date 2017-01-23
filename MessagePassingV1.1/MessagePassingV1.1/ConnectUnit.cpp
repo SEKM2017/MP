@@ -6,9 +6,27 @@ ConnectUnit::ConnectUnit()
 {
 }
 
+ConnectUnit::ConnectUnit(const ConnectUnit &)
+{
+}
+
+//ConnectUnit & ConnectUnit::operator=(const ConnectUnit &)
+//{
+//	// TODO: insert return statement here
+//}
+
 
 ConnectUnit::~ConnectUnit()
 {
+}
+ConnectUnit* ConnectUnit::theExemplar = 0;
+ConnectUnit * ConnectUnit::Exemplar()
+{
+	if (theExemplar == 0)
+	{
+		theExemplar = new ConnectUnit;
+	}
+	return (theExemplar);
 }
 
 void ConnectUnit::connect(Kanal &kanal, Aktionmanager aktionmanager)
@@ -16,7 +34,7 @@ void ConnectUnit::connect(Kanal &kanal, Aktionmanager aktionmanager)
 	throw"not implemented yet";
 }
 
-int ConnectUnit::connect(int KanalNummer, Kanal* refzumVerbundenenKanal)
+int ConnectUnit::connect(int KanalNummer)
 {
 	KanalListe *kListe;
 	Kanal *gesuchterKanal;
@@ -67,6 +85,7 @@ Sender::~Sender()
 
 void Sender::sendeNachricht(string nachricht)
 {
+	ThreadMutexGuard theGuard(theLock);
 	KanalListe *kListe;
 	Kanal *gesuchterKanal;
 	kListe = KanalListe::Exemplar();
@@ -85,11 +104,17 @@ Empfaenger::~Empfaenger()
 
 string Empfaenger::empfaengeNachricht()
 {
-	string returnString = "";
-	KanalListe *kListe;
-	Kanal *gesuchterKanal;
-	kListe = KanalListe::Exemplar();
-	gesuchterKanal = kListe->findKanalById(connectedTo);
-	gesuchterKanal->getMessageQueue()->lesen(5, returnString);
-	return returnString;
+	if (connectedTo > 0) {
+		ThreadMutexGuard theGuard(theLock);
+		string returnString = "";
+		KanalListe *kListe;
+		Kanal *gesuchterKanal;
+		kListe = KanalListe::Exemplar();
+		gesuchterKanal = kListe->findKanalById(connectedTo);
+		gesuchterKanal->getMessageQueue()->lesen(5, returnString);
+		return returnString;
+	}
+	else {
+		throw"Exepction: Keine Verbindung vorhanden";
+	}
 }

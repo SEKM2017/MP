@@ -16,3 +16,7 @@ void ThreadMutexGuard::release(void) { 			// Freigeben
 		theLock->release();
 	}
 }
+
+void ThreadMutexGuard::operator=(const ThreadMutexGuard &)
+{
+}

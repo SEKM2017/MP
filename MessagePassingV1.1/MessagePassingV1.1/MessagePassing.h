@@ -6,9 +6,12 @@ class MessagePassing
 {
 private: 
 	static MessagePassing* theExemplar;
-public:
+protected:
 	MessagePassing();
+	MessagePassing(const MessagePassing&);
 	~MessagePassing();
+public:
+	
 
 	static MessagePassing* Exemplar();
 	

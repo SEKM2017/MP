@@ -18,3 +18,7 @@ void ThreadMutex::release(void) {
 	LeaveCriticalSection(&theMutex);
 }
 
+void ThreadMutex::operator=(const ThreadMutex &)
+{
+}
+
