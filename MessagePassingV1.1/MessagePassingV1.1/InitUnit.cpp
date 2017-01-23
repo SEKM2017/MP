@@ -28,41 +28,41 @@ KanalListe* InitUnit::Init()
 	for (int i = 0; i <anzahlKanaele || i< (kanalListe->getAnzahlMaxKanaele() ); i++) {
 		kanal = new Kanal(i, zuErzeugendeSlotLens[i], zuErzeugendeSlotCounts[i]);
 		kanalListe->add(kanal);
-		Misc::WriteToLogfile("Kanal erfolgreich erstellt");
+		Logfile::Write("Kanal erfolgreich erstellt");
 	}
 	/*kanal = new Kanal(1,10,10);
 	kanalListe->add(kanal);
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(2, 20, 12);
 	kanalListe->add(kanal); 
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(3, 15, 10);
 	kanalListe->add(kanal);
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(4, 12, 15);
 	kanalListe->add(kanal); 
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(5, 14, 10);
 	kanalListe->add(kanal); 
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(6, 18, 10);
 	kanalListe->add(kanal); 
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(7, 16, 10);
 	kanalListe->add(kanal); 
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(8, 25, 10);
 	kanalListe->add(kanal); 
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(9, 30, 10);
 	kanalListe->add(kanal);
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
 	kanal = new Kanal(10, 40, 10);
 	kanalListe->add(kanal);
-	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");*/
-	Misc::WriteToLogfile("Kanaliste mit Kanaelen erfolgreich erstellt");
+	Logfile::Write("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");*/
+	Logfile::Write("Kanaliste mit Kanaelen erfolgreich erstellt");
 	
-	Misc::WriteToLogfile("Programm initialisiert");
+	Logfile::Write("Programm initialisiert");
 
 	return kanalListe;
 }
@@ -120,7 +120,7 @@ int InitUnit::erzeugeKanal(int slotLen, int slotCount)
 
 	logtext = "Kanal mit der Nummer: " + std::to_string(kanal->getKanalNummer()) + " mit Anzahl der Slots: " + std::to_string(slotCount) + " und der Slotgroesse: " + std::to_string(slotLen) + " erstellt.";
 
-	Misc::WriteToLogfile(logtext);
+	Logfile::Write(logtext);
 
 	return kanal->getKanalNummer();
 	
@@ -132,7 +132,7 @@ bool InitUnit::zerstoereKanal(int kanalNummer)
 
 	result = kanalListe->destroy(kanalNummer);
 
-	Misc::WriteToLogfile("Kanal mit der Nummer: " + std::to_string(kanalNummer) + " zerstoert.");
+	Logfile::Write("Kanal mit der Nummer: " + std::to_string(kanalNummer) + " zerstoert.");
 
 	return result;
 }

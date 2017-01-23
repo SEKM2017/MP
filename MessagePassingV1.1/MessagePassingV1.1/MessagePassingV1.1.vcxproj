@@ -150,9 +150,9 @@
     <ClInclude Include="InitUnit.h" />
     <ClInclude Include="Kanal.h" />
     <ClInclude Include="KanalListe.h" />
+    <ClInclude Include="Logfile.h" />
     <ClInclude Include="MessagePassing.h" />
     <ClInclude Include="MessageQueue.h" />
-    <ClInclude Include="Misc.h" />
     <ClInclude Include="seThread.h" />
     <ClInclude Include="ThreadMutex.h" />
     <ClInclude Include="ThreadMutexGuard.h" />
@@ -162,9 +162,9 @@
     <ClCompile Include="InitUnit.cpp" />
     <ClCompile Include="Kanal.cpp" />
     <ClCompile Include="KanalListe.cpp" />
+    <ClCompile Include="Logfile.cpp" />
     <ClCompile Include="MessagePassing.cpp" />
     <ClCompile Include="MessageQueue.cpp" />
-    <ClCompile Include="Misc.cpp" />
     <ClCompile Include="seThread.cpp" />
     <ClCompile Include="ThreadMutex.cpp" />
     <ClCompile Include="ThreadMutexGuard.cpp" />

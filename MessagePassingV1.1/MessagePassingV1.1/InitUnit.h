@@ -1,7 +1,7 @@
 #pragma once
 #include "KanalListe.h"
 #include "Kanal.h"
-#include "Misc.h"
+#include "Logfile.h"
 #include <sstream>  //for std::istringstream
 #include <iterator> //for std::istream_iterator
 #include <vector>   //for std::vector

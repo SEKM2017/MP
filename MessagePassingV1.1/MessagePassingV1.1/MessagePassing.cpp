@@ -31,7 +31,7 @@ int main()
 	Sender senderA, senderB;
 	Empfaenger empfA, empfB;
 
-	Misc::WriteToLogfile("Programm Message Passing Komponente gestartet");
+	Logfile::Write("Programm Message Passing Komponente gestartet");
 
 	connectUnit = ConnectUnit::Exemplar();
 
@@ -76,7 +76,6 @@ int main()
 	}
 	
 	system("PAUSE");
-	Misc::WriteToLogfile("Programm beendet");
+	Logfile::Write("Programm beendet");
 	return 0;
 }
-

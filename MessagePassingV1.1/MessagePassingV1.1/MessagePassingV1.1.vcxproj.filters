@@ -42,7 +42,7 @@
     <ClInclude Include="ThreadMutexGuard.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Misc.h">
+    <ClInclude Include="Logfile.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,7 +74,7 @@
     <ClCompile Include="ThreadMutexGuard.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Misc.cpp">
+    <ClCompile Include="Logfile.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

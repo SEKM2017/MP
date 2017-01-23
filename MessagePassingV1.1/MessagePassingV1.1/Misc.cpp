@@ -1,43 +1,6 @@
 #include "Misc.h"
 
-string Misc::ReadFromConfig(string searchString)
-{
-	fstream f;
-	string s,fs = "";
-	int i = 0,x=0,z=0,j;
-	f.open("config/config.ini", ios::in);
-	while (!f.eof())
-	{
-		getline(f,s);
-
-		std::size_t found = s.find(searchString);
-		if (i == 0)
-		{
-
-		}
-		else
-		{
-			if (found != std::string::npos)
-			{
-				fs.erase(fs.end() - 1);
-				fs = fs + ";";
-			}
-			else
-			{
-				fs = fs + s + ",";
-			}
-		}
-		
-		
-
-		i++;
-	}
-	
-	f.close();
-
-	return fs;
-}
-
+/*
 bool Misc::WriteToLogfile(string message)
 {
 	bool result = false;
@@ -55,3 +18,4 @@ bool Misc::WriteToLogfile(string message)
 
 	return result;
 }
+*/

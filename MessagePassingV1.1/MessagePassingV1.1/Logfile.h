@@ -9,10 +9,9 @@
 
 using namespace std;
 
-class Misc
+class Logfile
 {
-private:
 public:
-	//static bool WriteToLogfile(string message);
+	bool static Write(string message);
 };
 
