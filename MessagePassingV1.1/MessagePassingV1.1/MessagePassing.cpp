@@ -27,10 +27,13 @@ int main()
 {
 	InitUnit initUnit;
 	ConnectUnit *connectUnit;
-	connectUnit	= ConnectUnit::Exemplar();
 	KanalListe *kanalListe;
 	Sender senderA, senderB;
 	Empfaenger empfA, empfB;
+
+	Misc::WriteToLogfile("Programm Message Passing Komponente gestartet");
+
+	connectUnit = ConnectUnit::Exemplar();
 
 	kanalListe = initUnit.Init();
 	cout <<"|Message Passing Komponente - vorfuehrung|"<< endl;
@@ -71,12 +74,9 @@ int main()
 		cout << "Die Gespeicherte Nachricht war Laenger als die gewuenschte Laenge. Daher wurden " 
 			<<tmp<<" Zeichen gekuerzt"<< endl;
 	}
-
 	
-	
-
 	system("PAUSE");
-	Misc::WriteToLogfile("Logfile", "Programm beendet");
+	Misc::WriteToLogfile("Programm beendet");
 	return 0;
 }
 

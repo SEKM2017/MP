@@ -1,0 +1,39 @@
+2017.1.23 - 20:2:14 Programm Message Passing Komponente gestartet
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:14 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.23 - 20:2:14 Programm initialisiert
+2017.1.23 - 20:2:14 Kanal 0 - lesen: 
+2017.1.23 - 20:2:14 Kanal 6 - lesen: 
+2017.1.23 - 20:2:17 Kanal 0 - schreiben: Hallo123
+2017.1.23 - 20:2:20 Kanal 0 - lesen: Hallo
+2017.1.23 - 20:2:20 Kanal 0 - lesen: Nachricht wurde um 3 gekuerzt
+2017.1.23 - 20:2:22 Programm beendet
+2017.1.23 - 20:2:24 Programm Message Passing Komponente gestartet
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanal erfolgreich erstellt
+2017.1.23 - 20:2:24 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.23 - 20:2:24 Programm initialisiert
+2017.1.23 - 20:2:24 Kanal 0 - lesen: 
+2017.1.23 - 20:2:24 Kanal 6 - lesen: 
+2017.1.23 - 20:2:27 Kanal 0 - schreiben: ajdsklhfslghgljgljf
+2017.1.23 - 20:2:27 Kanal 0 - schreiben: Nachricht wurde um 4 gekuerzt
+2017.1.23 - 20:2:29 Kanal 0 - lesen: ajdsklhfsl
+2017.1.23 - 20:2:29 Kanal 0 - lesen: Nachricht wurde um 5 gekuerzt
+2017.1.23 - 20:2:30 Programm beendet

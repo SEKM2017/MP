@@ -37,9 +37,10 @@ int ConnectUnit::connect(int KanalNummer)
 	if (gesuchterKanal->getKanalNummer() != -1) {
 		//refzumVerbundenenKanal = gesuchterKanal;
 		return gesuchterKanal->getKanalNummer();
-		
+		Misc::WriteToLogfile("Verbindung mit Kanal " + std::to_string(KanalNummer) + " aufgebaut");
 	}
 	//return gesuchterKanal = new Kanal();
+	Misc::WriteToLogfile("Verbindung mit Kanal " + std::to_string(KanalNummer) + " konnte nicht aufgebaut");
 	return -2;
 }
 
@@ -87,9 +88,14 @@ void Sender::sendeNachricht(string nachricht)
 		gesuchterKanal = kListe->findKanalById(connectedTo);
 		MessageQueue *mq = gesuchterKanal->getMessageQueue();
 		sAntwort = mq->schreiben(nachricht);
+		Misc::WriteToLogfile("Kanal " + std::to_string(gesuchterKanal->getKanalNummer()) + " - schreiben: " + nachricht);
+		if(sAntwort.geschnittenAnzahl > 0)
+			Misc::WriteToLogfile("Kanal " + std::to_string(gesuchterKanal->getKanalNummer()) + " - schreiben: " + "Nachricht wurde um " + std::to_string(sAntwort.geschnittenAnzahl) + " gekuerzt");
+
 	}
 	else {
 		sAntwort.antwortAnSender = "Verbindungsfehler mit dem Kanal";
+		Misc::WriteToLogfile("Sender mit keinem Kanal verbunden");
 	}
 
 }
@@ -113,10 +119,14 @@ string Empfaenger::empfaengeNachricht(int len)
 		gesuchterKanal = kListe->findKanalById(connectedTo);
 		MessageQueue *mq = gesuchterKanal->getMessageQueue();
 		eAntwort = mq->lesen(len, returnString);
+		Misc::WriteToLogfile("Kanal " + std::to_string(gesuchterKanal->getKanalNummer()) + " - lesen: " + returnString);
+		if (eAntwort.geschnittenAnzahl > 0)
+			Misc::WriteToLogfile("Kanal " + std::to_string(gesuchterKanal->getKanalNummer()) + " - lesen: " + "Nachricht wurde um " + std::to_string(eAntwort.geschnittenAnzahl) + " gekuerzt");
 		return returnString;
 	}
 	else {
 		eAntwort.antwortAnEmpfaenger = "Verbindungsfehler mit dem Kanal";
+		Misc::WriteToLogfile("Empfänger mit keinem Kanal verbunden");
 		return "_ERROR";
 	}
 }

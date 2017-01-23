@@ -15,7 +15,6 @@ KanalListe* InitUnit::Init()
 	string str;
 	KanalListe *kanalListe = KanalListe::Exemplar();
 
-	Misc::WriteToLogfile("Logfile", "Programm gestartet");
 	dateiEinlesen();
 		
 	//Erstellen der Kanaele und hinzufügen von Kanaelen
@@ -29,7 +28,7 @@ KanalListe* InitUnit::Init()
 	for (int i = 0; i <anzahlKanaele || i< (kanalListe->getAnzahlMaxKanaele() ); i++) {
 		kanal = new Kanal(i, zuErzeugendeSlotLens[i], zuErzeugendeSlotCounts[i]);
 		kanalListe->add(kanal);
-		Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");
+		Misc::WriteToLogfile("Kanal erfolgreich erstellt");
 	}
 	/*kanal = new Kanal(1,10,10);
 	kanalListe->add(kanal);
@@ -61,8 +60,10 @@ KanalListe* InitUnit::Init()
 	kanal = new Kanal(10, 40, 10);
 	kanalListe->add(kanal);
 	Misc::WriteToLogfile("Kanal" + std::to_string(kanal->getKanalNummer()), "Kanal erfolgreich erstellt");*/
-	Misc::WriteToLogfile("Logfile", "Kanaliste mit Kanaelen erfolgreich erstellt");
+	Misc::WriteToLogfile("Kanaliste mit Kanaelen erfolgreich erstellt");
 	
+	Misc::WriteToLogfile("Programm initialisiert");
+
 	return kanalListe;
 }
 void InitUnit::dateiEinlesen()
@@ -111,15 +112,15 @@ int InitUnit::erzeugeKanal(int slotLen, int slotCount)
 {
 	KanalListe *kanalListe = KanalListe::Exemplar();
 	
-	string logfile;
+	string logtext;
 
 	Kanal *kanal = new Kanal();
 
 	kanalListe->add(kanal);
 
-	logfile = "Kanal mit der Nummer: " + std::to_string(kanal->getKanalNummer()) + " mit Anzahl der Slots: " + std::to_string(slotCount) + " und der Slotgroesse: " + std::to_string(slotLen) + " erstellt.";
+	logtext = "Kanal mit der Nummer: " + std::to_string(kanal->getKanalNummer()) + " mit Anzahl der Slots: " + std::to_string(slotCount) + " und der Slotgroesse: " + std::to_string(slotLen) + " erstellt.";
 
-	Misc::WriteToLogfile("Logfile", logfile);
+	Misc::WriteToLogfile(logtext);
 
 	return kanal->getKanalNummer();
 	
@@ -131,7 +132,7 @@ bool InitUnit::zerstoereKanal(int kanalNummer)
 
 	result = kanalListe->destroy(kanalNummer);
 
-	Misc::WriteToLogfile("Logfile", "Kanal mit der Nummer: " + std::to_string(kanalNummer) + " zerstoert.");
+	Misc::WriteToLogfile("Kanal mit der Nummer: " + std::to_string(kanalNummer) + " zerstoert.");
 
 	return result;
 }

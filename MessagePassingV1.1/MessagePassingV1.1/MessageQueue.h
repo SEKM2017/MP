@@ -2,6 +2,7 @@
 #include <string>
 #include <list>
 #include "ThreadMutexGuard.h"
+#include "Misc.h"
 #define DefinedslotCount  10
 #define DefinedslotLen 5
 using namespace std;

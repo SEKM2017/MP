@@ -45,7 +45,6 @@ SENDERANTWORT MessageQueue::schreiben(string gesendeteNchricht)
 			}
 				nachrichten[i].assign(gesendeteNchricht, 0,kopierLaenge);
 				senAntwort.erfolg = true;
-				
 			return senAntwort;
 		}
 		else if (i == slotCount) {

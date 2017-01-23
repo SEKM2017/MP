@@ -1,17 +1,5 @@
 #include "Misc.h"
 
-
-
-
-Misc::Misc()
-{
-}
-
-
-Misc::~Misc()
-{
-}
-
 string Misc::ReadFromConfig(string searchString)
 {
 	fstream f;
@@ -50,7 +38,7 @@ string Misc::ReadFromConfig(string searchString)
 	return fs;
 }
 
-bool Misc::WriteToLogfile(string filename, string message)
+bool Misc::WriteToLogfile(string message)
 {
 	bool result = false;
 	time_t t;
@@ -60,7 +48,7 @@ bool Misc::WriteToLogfile(string filename, string message)
 	now = localtime(&t);
 
 	fstream f;
-	f.open("log/" + filename + ".txt", ios::app);
+	f.open("Logfile.txt", ios::app);
 	f << now->tm_year + 1900 << '.' <<  now->tm_mon + 1 << '.' << now->tm_mday << " - " << now->tm_hour << ':' << now->tm_min << ':' << now->tm_sec << " ";
 	f << message << endl;
 	f.close();

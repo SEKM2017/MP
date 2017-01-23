@@ -13,9 +13,7 @@ class Misc
 {
 private:
 public:
-	Misc();
-	~Misc();
 	static string ReadFromConfig(string searchString);
-	static bool WriteToLogfile(string filename, string message);
+	static bool WriteToLogfile(string message);
 };
 
