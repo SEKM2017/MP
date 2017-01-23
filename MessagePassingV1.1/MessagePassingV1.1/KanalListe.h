@@ -1,12 +1,12 @@
 #pragma once
 #include "Kanal.h"
-
+#define MaxKanaele 10
 class KanalListe
 {
 private:
-	int anzahlMaxKanaele=10;
+	int anzahlMaxKanaele= MaxKanaele;
 	int listCounter=0;
-	Kanal liste[10];
+	Kanal liste[MaxKanaele];
 	static KanalListe* theExemplar;
 protected:
 	KanalListe();
