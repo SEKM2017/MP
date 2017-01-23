@@ -14,7 +14,6 @@ protected:
 public:
 	static ConnectUnit* Exemplar();
 	ThreadMutex theLock;
-	void connect(Kanal &kanal, Aktionmanager aktionmanager);
 	int connect(int KanalNummer);
 	//void connect()
 	bool disconnect();
@@ -53,6 +52,6 @@ public:
 	bool connectionAvailable = false;
 	Empfaenger();
 	~Empfaenger();
-	string empfaengeNachricht();
+	string empfaengeNachricht(int len);
 };
 

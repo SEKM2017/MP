@@ -16,7 +16,8 @@ KanalListe* InitUnit::Init()
 	KanalListe *kanalListe = KanalListe::Exemplar();
 
 	Misc::WriteToLogfile("Logfile", "Programm gestartet");
-
+	dateiEinlesen();
+		
 	//Erstellen der Kanaele und hinzufügen von Kanaelen
 	/*
 	for (i = 0; i < 10; i++)
@@ -58,6 +59,28 @@ KanalListe* InitUnit::Init()
 	Misc::WriteToLogfile("Logfile", "Kanaliste mit Kanaelen erfolgreich erstellt");
 	
 	return kanalListe;
+}
+void InitUnit::dateiEinlesen()
+{
+	ifstream initFile;
+	string line;
+	int anzahlLines = 0;
+	initFile.open("init.txt");
+	int a =0, b=0;
+	if (initFile.is_open()) {
+		while (!initFile.eof())
+		{
+			getline(initFile, line,','); 
+			//cout << line << "\n";
+			zuErzeugendeKanaele[0][a] = stoi(line);
+			a++;
+			/*anzahlLines++;*/
+		}
+	}
+	initFile.close();
+	size_t found = 0;
+	found = line.find(",");
+	
 }
 //bool InitUnit::ReInit(KanalListe liste)
 //{

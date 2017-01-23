@@ -1,6 +1,4 @@
 #include "MessageQueue.h"
-#include <list>
-
 using namespace std;
 MessageQueue::MessageQueue()
 {

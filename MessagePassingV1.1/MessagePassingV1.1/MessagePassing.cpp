@@ -47,19 +47,22 @@ int main()
 	senderA.connectedTo = connectUnit->connect(0);
 	senderB.connectedTo = connectUnit->connect(6);
 
-	string tempText = empfA.empfaengeNachricht();
-	string tempText2 = empfB.empfaengeNachricht();
+	string tempText = empfA.empfaengeNachricht(5);
+	string tempText2 = empfB.empfaengeNachricht(5);
 	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << tempText <<"\" \n";
 	cout << "In Kanal Nr." << kB->getKanalNummer() << " steht: \"" << tempText2 << "\" \n\n";
 
 	cout << "Sendevorgang und Empfangvorgang: " << endl;
-	cout << "Geben Sie eine Nachricht ein, die im Kanal " << kA->getKanalNummer() << "gespeichert werden soll." << endl;
+	cout << "Geben Sie eine Nachricht ein, die im Kanal " << kA->getKanalNummer() << " gespeichert werden soll." << endl;
 	cin >> tempText;
 	senderA.sendeNachricht(tempText);
-
-	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << empfA.empfaengeNachricht() << "\" \n";
-	kanalListe->destroy(1);
-	cout << "In Kanal Nr." << kA->getKanalNummer() << endl;
+	int tmp;
+	cout <<"Geben Sie die gewuenschte Laenge fuer dem Empfang an."<< endl;
+	cin >> tmp;
+	cout << "In Kanal Nr." << kA->getKanalNummer() << " steht: \"" << empfA.empfaengeNachricht(tmp) << "\" \n";
+	
+	
+	//kanalListe->destroy(1);
 
 	system("PAUSE");
 	Misc::WriteToLogfile("Logfile", "Programm beendet");

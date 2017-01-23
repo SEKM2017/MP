@@ -49,9 +49,6 @@ MessageQueue* Kanal::getMessageQueue()
 	return messageQueue;
 }
 
-void Kanal::addAktionManagaer(Aktionmanager am)
-{
-}
 int Kanal::getKanalNummer()
 {
 	return kanalNummer;

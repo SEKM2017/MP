@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Aktionmanager.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="AktionmanagerListe.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="ConnectUnit.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -53,12 +47,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Aktionmanager.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="AktionmanagerListe.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="ConnectUnit.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>

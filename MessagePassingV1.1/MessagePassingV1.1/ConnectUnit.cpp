@@ -1,7 +1,5 @@
 #include "ConnectUnit.h"
 
-
-
 ConnectUnit::ConnectUnit()
 {
 }
@@ -29,10 +27,6 @@ ConnectUnit * ConnectUnit::Exemplar()
 	return (theExemplar);
 }
 
-void ConnectUnit::connect(Kanal &kanal, Aktionmanager aktionmanager)
-{
-	throw"not implemented yet";
-}
 
 int ConnectUnit::connect(int KanalNummer)
 {
@@ -102,7 +96,7 @@ Empfaenger::~Empfaenger()
 {
 }
 
-string Empfaenger::empfaengeNachricht()
+string Empfaenger::empfaengeNachricht(int len)
 {
 	if (connectedTo > 0) {
 		ThreadMutexGuard theGuard(theLock);
@@ -111,7 +105,7 @@ string Empfaenger::empfaengeNachricht()
 		Kanal *gesuchterKanal;
 		kListe = KanalListe::Exemplar();
 		gesuchterKanal = kListe->findKanalById(connectedTo);
-		gesuchterKanal->getMessageQueue()->lesen(5, returnString);
+		gesuchterKanal->getMessageQueue()->lesen(len, returnString);
 		return returnString;
 	}
 	else {

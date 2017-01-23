@@ -146,8 +146,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Aktionmanager.h" />
-    <ClInclude Include="AktionmanagerListe.h" />
     <ClInclude Include="ConnectUnit.h" />
     <ClInclude Include="InitUnit.h" />
     <ClInclude Include="Kanal.h" />
@@ -160,8 +158,6 @@
     <ClInclude Include="ThreadMutexGuard.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Aktionmanager.cpp" />
-    <ClCompile Include="AktionmanagerListe.cpp" />
     <ClCompile Include="ConnectUnit.cpp" />
     <ClCompile Include="InitUnit.cpp" />
     <ClCompile Include="Kanal.cpp" />
