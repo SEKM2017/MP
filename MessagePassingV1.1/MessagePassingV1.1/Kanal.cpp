@@ -28,7 +28,7 @@ Kanal::Kanal(MessageQueue *mq, int kanalNR)
 
 Kanal::~Kanal()
 {
-	//Hier muss noch der Speicher freigegeben werden
+	
 }
 
 bool Kanal::setMessageQueue(int slotLen, int slotCount)

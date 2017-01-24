@@ -59,7 +59,8 @@ SENDERANTWORT MessageQueue::schreiben(string gesendeteNchricht)
 EMPFAENGERANTWORT MessageQueue::lesen(int verlangteLaenge, string& kopierString)
 {
 	string returnString = "";
-		if (nachrichten[0] != "") {
+		if (nachrichten[0] != "") 
+		{
 			int kopierLaenge = static_cast<int>(nachrichten[0].length());
 			//if (slotLen < kopierLaenge) kopierLaenge = slotLen;
 			if (verlangteLaenge < kopierLaenge) {
@@ -72,14 +73,23 @@ EMPFAENGERANTWORT MessageQueue::lesen(int verlangteLaenge, string& kopierString)
 			//in der Messaggequeue alles um eins höher
 			if (true) //Bei mehreren Empfängern, alle haben die Nachricht gelesen
 			{
-				for (int i = 1; i < slotCount; i++) {
+				for (int i = 0; i < slotCount; i++) {
 					if (nachrichten[i] != "") {
-						nachrichten[0].assign(nachrichten[i]);
+						if (i >= 1) {
+							nachrichten[i - 1].assign(nachrichten[i]);
+						}
+						
 						nachrichten[i] = "";
 					}
-				}
+				}				
 			}
-
+			
+			return empfAntwort;
+		}
+		else
+		{
+			empfAntwort.erfolg = false;
+			empfAntwort.antwortAnEmpfaenger = "Keine Nachricht Vorhanden";
 			return empfAntwort;
 		}
 	

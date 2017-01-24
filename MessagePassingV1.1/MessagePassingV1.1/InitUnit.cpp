@@ -25,10 +25,10 @@ KanalListe* InitUnit::Init()
 		kanalListe->add(kanal,10,10);
 	}
 	*/
-	for (int i = 0; i <anzahlKanaele || i< (kanalListe->getAnzahlMaxKanaele() ); i++) {
+	for (int i = 0; i <anzahlKanaele && i< (kanalListe->getAnzahlMaxKanaele() ); i++) {
 		kanal = new Kanal(i, zuErzeugendeSlotLens[i], zuErzeugendeSlotCounts[i]);
 		kanalListe->add(kanal);
-		Logfile::Write("Kanal erfolgreich erstellt");
+		Logfile::Write("Kanal" + to_string(i) + " erfolgreich erstellt ");
 	}
 	/*kanal = new Kanal(1,10,10);
 	kanalListe->add(kanal);
@@ -108,13 +108,13 @@ void InitUnit::dateiEinlesen()
 //{
 //	throw "NIY";
 //}
-int InitUnit::erzeugeKanal(int slotLen, int slotCount)
+int InitUnit::erzeugeKanal(int kanalNummer, int slotLen, int slotCount)
 {
 	KanalListe *kanalListe = KanalListe::Exemplar();
 	
 	string logtext;
 
-	Kanal *kanal = new Kanal();
+	Kanal *kanal = new Kanal(kanalNummer,slotLen,slotCount);
 
 	kanalListe->add(kanal);
 

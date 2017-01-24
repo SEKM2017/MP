@@ -1,39 +1,238 @@
-2017.1.23 - 20:17:17 Programm Message Passing Komponente gestartet
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:17 Kanaliste mit Kanaelen erfolgreich erstellt
-2017.1.23 - 20:17:17 Programm initialisiert
-2017.1.23 - 20:17:17 Kanal 0 - lesen: 
-2017.1.23 - 20:17:17 Kanal 6 - lesen: 
-2017.1.23 - 20:17:19 Kanal 0 - schreiben: Hallo123
-2017.1.23 - 20:17:21 Kanal 0 - lesen: Hallo
-2017.1.23 - 20:17:21 Kanal 0 - lesen: Nachricht wurde um 3 gekuerzt
-2017.1.23 - 20:17:22 Programm beendet
-2017.1.23 - 20:17:24 Programm Message Passing Komponente gestartet
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanal erfolgreich erstellt
-2017.1.23 - 20:17:24 Kanaliste mit Kanaelen erfolgreich erstellt
-2017.1.23 - 20:17:24 Programm initialisiert
-2017.1.23 - 20:17:24 Kanal 0 - lesen: 
-2017.1.23 - 20:17:24 Kanal 6 - lesen: 
-2017.1.23 - 20:17:25 Kanal 0 - schreiben: asfdkjshflkhdsajflsa
-2017.1.23 - 20:17:25 Kanal 0 - schreiben: Nachricht wurde um 5 gekuerzt
-2017.1.23 - 20:17:28 Kanal 0 - lesen: asfdkjshfl
-2017.1.23 - 20:17:28 Kanal 0 - lesen: Nachricht wurde um 5 gekuerzt
-2017.1.23 - 20:17:31 Programm beendet
+2017.1.24 - 11:39:17 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:39:17 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal6 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal7 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal8 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanal9 erfolgreich erstellt 
+2017.1.24 - 11:39:17 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:39:17 Programm initialisiert
+2017.1.24 - 11:39:17 Kanal 0 - lesen: 
+2017.1.24 - 11:39:17 Kanal 6 - lesen: 
+2017.1.24 - 11:39:19 Kanal 0 - schreiben: 15645645
+2017.1.24 - 11:39:20 Kanal 0 - schreiben: 546456546
+2017.1.24 - 11:39:21 Kanal 0 - schreiben: 456456456
+2017.1.24 - 11:39:22 Kanal 0 - lesen: 15645645
+2017.1.24 - 11:39:23 Kanal 0 - lesen: 546456546
+2017.1.24 - 11:39:25 Kanal 0 - lesen: 456456456
+2017.1.24 - 11:39:27 Kanal 0 - lesen: 
+2017.1.24 - 11:39:40 Kanal mit der Nummer: 0 zerstoert.
+2017.1.24 - 11:40:32 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:40:32 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal6 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal7 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal8 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanal9 erfolgreich erstellt 
+2017.1.24 - 11:40:32 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:40:32 Programm initialisiert
+2017.1.24 - 11:40:32 Kanal 0 - lesen: 
+2017.1.24 - 11:40:32 Kanal 6 - lesen: 
+2017.1.24 - 11:40:37 Kanal 0 - schreiben: sadsadsad
+2017.1.24 - 11:40:38 Kanal 0 - schreiben: 5545454
+2017.1.24 - 11:40:41 Kanal 0 - schreiben: sdasdsadasd
+2017.1.24 - 11:40:42 Kanal 0 - lesen: sadsadsad
+2017.1.24 - 11:40:43 Kanal 0 - lesen: 5545454
+2017.1.24 - 11:40:44 Kanal 0 - lesen: sdasdsadasd
+2017.1.24 - 11:40:48 Kanal 0 - lesen: 
+2017.1.24 - 11:40:48 Kanal mit der Nummer: 0 zerstoert.
+2017.1.24 - 11:40:53 Kanal 0 - schreiben: sadasd
+2017.1.24 - 11:40:55 Kanal 0 - schreiben: sadsad
+2017.1.24 - 11:41:59 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:41:59 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal6 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal7 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal8 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanal9 erfolgreich erstellt 
+2017.1.24 - 11:41:59 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:41:59 Programm initialisiert
+2017.1.24 - 11:43:52 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:43:52 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:43:52 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:43:52 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:43:52 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:43:52 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:43:52 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:43:52 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:43:52 Programm initialisiert
+2017.1.24 - 11:46:15 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:46:15 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:46:15 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:46:15 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:46:15 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:46:15 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:46:15 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:46:15 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:46:15 Programm initialisiert
+2017.1.24 - 11:46:27 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:46:27 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:46:27 Kanal 0 - lesen: 
+2017.1.24 - 11:46:27 Empfänger mit keinem Kanal verbunden
+2017.1.24 - 11:46:29 Kanal 0 - schreiben: 45645654+
+2017.1.24 - 11:46:30 Kanal 0 - schreiben: 456456554
+2017.1.24 - 11:46:31 Kanal 0 - schreiben: 456456456
+2017.1.24 - 11:46:32 Kanal 0 - lesen: 45645654+
+2017.1.24 - 11:46:33 Kanal 0 - lesen: 456456554
+2017.1.24 - 11:46:34 Kanal 0 - lesen: 456456456
+2017.1.24 - 11:46:35 Kanal 0 - lesen: 
+2017.1.24 - 11:46:42 Kanal mit der Nummer: -1 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 11:48:13 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:48:13 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:48:13 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:48:13 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:48:13 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:48:13 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:48:13 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:48:13 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:48:13 Programm initialisiert
+2017.1.24 - 11:48:15 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:48:15 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:48:15 Kanal 0 - lesen: 
+2017.1.24 - 11:48:15 Empfänger mit keinem Kanal verbunden
+2017.1.24 - 11:48:21 Kanal 0 - schreiben: 56
+2017.1.24 - 11:48:22 Kanal 0 - schreiben: 56+6
+2017.1.24 - 11:48:23 Kanal 0 - schreiben: 4
+2017.1.24 - 11:48:24 Kanal 0 - lesen: 56
+2017.1.24 - 11:48:25 Kanal 0 - lesen: 56+6
+2017.1.24 - 11:49:41 Kanal 0 - lesen: 4
+2017.1.24 - 11:49:42 Kanal 0 - lesen: 
+2017.1.24 - 11:49:56 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 11:50:24 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:50:24 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:50:24 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:50:24 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:50:24 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:50:24 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:50:24 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:50:24 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:50:24 Programm initialisiert
+2017.1.24 - 11:50:26 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:50:26 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:50:26 Kanal 0 - lesen: 
+2017.1.24 - 11:50:26 Empfänger mit keinem Kanal verbunden
+2017.1.24 - 11:50:29 Kanal 0 - schreiben: 1
+2017.1.24 - 11:50:30 Kanal 0 - schreiben: 222
+2017.1.24 - 11:50:30 Kanal 0 - schreiben: 5
+2017.1.24 - 11:50:32 Kanal 0 - lesen: 1
+2017.1.24 - 11:50:32 Kanal 0 - lesen: 222
+2017.1.24 - 11:50:33 Kanal 0 - lesen: 5
+2017.1.24 - 11:50:34 Kanal 0 - lesen: 
+2017.1.24 - 11:51:39 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 11:52:3 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:52:3 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:52:3 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:52:3 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:52:3 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:52:3 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:52:3 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:52:3 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:52:3 Programm initialisiert
+2017.1.24 - 11:52:13 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:52:13 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:52:13 Kanal 0 - lesen: 
+2017.1.24 - 11:52:13 Empfänger mit keinem Kanal verbunden
+2017.1.24 - 11:52:16 Kanal 0 - schreiben: 94
+2017.1.24 - 11:52:17 Kanal 0 - schreiben: 49
+2017.1.24 - 11:52:18 Kanal 0 - schreiben: 49
+2017.1.24 - 11:52:23 Kanal 0 - lesen: 94
+2017.1.24 - 11:52:24 Kanal 0 - lesen: 49
+2017.1.24 - 11:52:25 Kanal 0 - lesen: 49
+2017.1.24 - 11:52:25 Kanal 0 - lesen: 
+2017.1.24 - 11:52:41 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 11:54:15 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:54:15 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:54:15 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:54:15 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:54:15 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:54:15 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:54:15 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:54:15 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:54:15 Programm initialisiert
+2017.1.24 - 11:54:17 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:54:17 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:54:17 Kanal 0 - lesen: 
+2017.1.24 - 11:54:17 Empfänger mit keinem Kanal verbunden
+2017.1.24 - 11:54:20 Kanal 0 - schreiben: ad
+2017.1.24 - 11:54:21 Kanal 0 - schreiben: asd
+2017.1.24 - 11:54:21 Kanal 0 - schreiben: as
+2017.1.24 - 11:54:22 Kanal 0 - lesen: ad
+2017.1.24 - 11:54:23 Kanal 0 - lesen: asd
+2017.1.24 - 11:54:24 Kanal 0 - lesen: as
+2017.1.24 - 11:54:25 Kanal 0 - lesen: 
+2017.1.24 - 11:54:30 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 11:54:36 Kanal 6 - schreiben: asdasd
+2017.1.24 - 11:57:9 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:57:9 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:57:9 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:57:10 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:57:10 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:57:10 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:57:10 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:57:10 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:57:10 Programm initialisiert
+2017.1.24 - 11:57:13 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:57:13 Verbindung mit Kanal 6 konnte nicht aufgebaut
+2017.1.24 - 11:57:13 Kanal 0 - lesen: 
+2017.1.24 - 11:57:13 Empfänger mit keinem Kanal verbunden
+2017.1.24 - 11:57:19 Kanal 0 - schreiben: dasdasd
+2017.1.24 - 11:57:21 Kanal 0 - schreiben: adad
+2017.1.24 - 11:57:22 Kanal 0 - schreiben: a
+2017.1.24 - 11:57:23 Kanal 0 - lesen: dasdasd
+2017.1.24 - 11:57:24 Kanal 0 - lesen: adad
+2017.1.24 - 11:57:25 Kanal 0 - lesen: a
+2017.1.24 - 11:57:27 Kanal 0 - lesen: 
+2017.1.24 - 11:57:29 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 11:57:35 Kanal 6 - schreiben: asdsad
+2017.1.24 - 11:59:49 Programm Message Passing Komponente gestartet
+2017.1.24 - 11:59:49 Kanal0 erfolgreich erstellt 
+2017.1.24 - 11:59:49 Kanal1 erfolgreich erstellt 
+2017.1.24 - 11:59:49 Kanal2 erfolgreich erstellt 
+2017.1.24 - 11:59:49 Kanal3 erfolgreich erstellt 
+2017.1.24 - 11:59:49 Kanal4 erfolgreich erstellt 
+2017.1.24 - 11:59:49 Kanal5 erfolgreich erstellt 
+2017.1.24 - 11:59:49 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 11:59:49 Programm initialisiert
+2017.1.24 - 12:0:0 Kanal 0 - lesen: 
+2017.1.24 - 12:0:3 Kanal 0 - schreiben: 64464
+2017.1.24 - 12:0:5 Kanal 0 - schreiben: adasdasd
+2017.1.24 - 12:0:7 Kanal 0 - schreiben: .,-,.-.,
+2017.1.24 - 12:0:8 Kanal 0 - lesen: 64464
+2017.1.24 - 12:0:9 Kanal 0 - lesen: adasdasd
+2017.1.24 - 12:0:11 Kanal 0 - lesen: .,-,.-.,
+2017.1.24 - 12:0:13 Kanal 0 - lesen: 
+2017.1.24 - 12:0:13 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 12:0:21 Kanal 6 - schreiben: qqq
+2017.1.24 - 12:0:23 Programm beendet
+2017.1.24 - 12:1:29 Programm Message Passing Komponente gestartet
+2017.1.24 - 12:1:29 Kanal0 erfolgreich erstellt 
+2017.1.24 - 12:1:29 Kanal1 erfolgreich erstellt 
+2017.1.24 - 12:1:29 Kanal2 erfolgreich erstellt 
+2017.1.24 - 12:1:29 Kanal3 erfolgreich erstellt 
+2017.1.24 - 12:1:29 Kanal4 erfolgreich erstellt 
+2017.1.24 - 12:1:29 Kanal5 erfolgreich erstellt 
+2017.1.24 - 12:1:29 Kanaliste mit Kanaelen erfolgreich erstellt
+2017.1.24 - 12:1:29 Programm initialisiert
+2017.1.24 - 12:1:29 Kanal 0 - lesen: 
+2017.1.24 - 12:1:31 Kanal 0 - schreiben: 666
+2017.1.24 - 12:1:32 Kanal 0 - schreiben: qqq
+2017.1.24 - 12:1:36 Kanal 0 - schreiben: 222
+2017.1.24 - 12:1:38 Kanal 0 - lesen: 666
+2017.1.24 - 12:1:38 Kanal 0 - lesen: qqq
+2017.1.24 - 12:1:39 Kanal 0 - lesen: 222
+2017.1.24 - 12:1:40 Kanal 0 - lesen: 
+2017.1.24 - 12:1:40 Kanal mit der Nummer: 6 mit Anzahl der Slots: 1 und der Slotgroesse: 30 erstellt.
+2017.1.24 - 12:1:44 Kanal 6 - schreiben: www
+2017.1.24 - 12:1:45 Kanal 6 - lesen: www

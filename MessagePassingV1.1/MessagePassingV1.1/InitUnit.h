@@ -22,7 +22,7 @@ public:
 	KanalListe* Init();
 	bool ReInit(KanalListe liste);
 	void dateiEinlesen();
-	int erzeugeKanal(int slotLen, int slotCount);
+	int erzeugeKanal(int kanalNr, int slotLen, int slotCount);
 	bool zerstoereKanal(int kanalNummer);
 };
 
